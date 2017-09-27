@@ -1,0 +1,13 @@
+.testimonials{
+    padding: 50px;
+    background-color: $lightblue;
+    .carousel-indicators{
+        bottom: -15%;
+        li{
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+        }
+    }
+}

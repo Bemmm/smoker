@@ -1,0 +1,52 @@
+.contact{
+    padding: 50px;
+    background-image: url('http://www.sonypictures.com/movies/dontbreathe/assets/images/onesheet-background.jpg');
+    &__content{
+        form {
+            position: relative;
+            .separator{
+                width:2px;
+                height:100%;;
+                background-color: #fff;
+                display: block;
+                position: absolute;
+                margin: auto;
+                left:0;
+                right:0;
+            }            
+            .left-block{
+                padding: 0 50px;
+                text-align: center;
+            }
+            .right-block{
+                padding: 0 50px;
+                text-align: center;             
+            }            
+            padding: 20px;
+            .wrapper {
+              margin-bottom: 40px;
+              input,
+              textarea {
+                width: 100%;
+                max-width: 320px;
+                padding: 10px;
+                text-align: left;
+              }
+              button {
+                width: 100%;
+                max-width: 320px;
+                padding: 10px 5px;
+                text-align: center;
+                color: black;
+                background-color: $lightblue;
+                text-transform: uppercase;
+                border: 0;
+                span{
+                    color:#fff;
+                }
+              }
+            }
+          }        
+
+    }
+}

@@ -1,0 +1,27 @@
+.benefits{
+    padding: 50px;
+    &__center{
+        width:100%;
+        background-color: $lightblue;
+        height: 320px;
+        margin: 20px 0;
+        text-align: center;
+        background-image: url('https://static1.squarespace.com/static/56fe996360b5e97dd6ae7e43/578508acb8a79b20f43a3ff9/5797787dbe65947cbc4c0be4/1469544578445/Lungs-Icon-White.png'); 
+        background-size: 70%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__left,
+    &__right{
+        width:100%;
+        background-color: $lightblue;
+        height: 150px;
+        margin: 20px 0;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}

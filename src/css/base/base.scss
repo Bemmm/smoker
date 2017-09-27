@@ -1,0 +1,48 @@
+.title {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  &.white {
+    color: black;
+    span {
+      color: #fff;
+    }
+    &:after {
+        content: '. . . . . . . . . . . . . . . .';
+        color: black;
+        display: block;
+        font-size: 40px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+  }
+  &.blue {
+    color: black;
+    span {
+      color: $lightblue;
+    }
+    &:after {
+        content: '. . . . . . . . . . . . . . . .';
+        color: black;
+        display: block;
+        font-size: 40px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+  }
+  &.white-blue {
+    color: #fff;
+    span {
+      color: $lightblue;
+    }
+    &:after {
+        content: '. . . . . . . . . . . . . . . .';
+        color: #fff;
+        display: block;
+        font-size: 40px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+  }     
+}

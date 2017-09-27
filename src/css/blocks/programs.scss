@@ -1,0 +1,62 @@
+.programs{
+    background-image: url('https://st.depositphotos.com/1907633/2380/i/950/depositphotos_23805509-stock-photo-medicine-doctor-hands-working-with.jpg');
+    padding: 80px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    &:before{
+        content:'';
+        z-index: 0;
+        position: absolute;
+        background: $darkgrey-opacity;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .title{
+        z-index: 1;
+        position: relative;
+    }
+    &__content{
+        z-index: 1;
+        position: relative;
+        padding-bottom: 20px;
+        &-separator{
+            position: absolute;
+            left:0;
+            right:0;
+            font-size: 40px;
+            color:#fff;
+            line-height: 15px
+        }
+        &-item{
+            &.left{
+                padding-right: 35px;
+            }
+            &.right{
+                padding-left: 35px;
+            }
+            h3{
+                color: $lightblue;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }            
+            p{
+                color:#fff;
+                font-size: 22px;
+                line-height: 25px;
+                margin-bottom: 0;
+            }
+        }
+
+    }
+    &__more{
+        font-size: 25px;
+        position: relative;
+        z-index: 1;
+        text-decoration: underline;
+        text-align: center;
+        display: block;
+    }
+}

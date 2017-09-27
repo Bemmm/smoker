@@ -1,0 +1,30 @@
+.about{
+    padding: 80px;
+    background-image: url('https://www.textures.com/system/gallery/photos/Nature/Forests/101548/NatureForests0085_1_350.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    &:before{
+        content:'';
+        z-index: 0;
+        position: absolute;
+        background: $lightblue-opacity;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .title{
+        z-index: 1;
+        position: relative;
+    }
+    &__content{
+        color:black;
+        z-index: 1;
+        font-size: 18px;
+        position: relative;
+        span{
+            color: #fff;
+        }
+    }
+}
