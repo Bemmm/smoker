@@ -1,8 +1,8 @@
 .about{
-    padding: 80px;
-    background-image: url('https://www.textures.com/system/gallery/photos/Nature/Forests/101548/NatureForests0085_1_350.jpg');
+    padding: 95px 10px;
+    background-image: url('../images/about.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     position: relative;
     &:before{
         content:'';

@@ -1,20 +1,22 @@
 .title {
-  font-size: 24px;
+  font-size: 34px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
+  font-family: 'Roboto Condensed', sans-serif;
+  
   &.white {
     color: black;
     span {
       color: #fff;
     }
     &:after {
-        content: '. . . . . . . . . . . . . . . .';
-        color: black;
-        display: block;
-        font-size: 40px;
-        line-height: 20px;
-        margin-bottom: 50px;
+      content: '●●●●●●●●●●●●●●●●●';
+      color: black;
+      display: block;
+      font-size: 15px;
+      margin: 15px 0;
+      letter-spacing: 5px;
     }
   }
   &.blue {
@@ -23,12 +25,12 @@
       color: $lightblue;
     }
     &:after {
-        content: '. . . . . . . . . . . . . . . .';
-        color: black;
-        display: block;
-        font-size: 40px;
-        line-height: 20px;
-        margin-bottom: 50px;
+      content: '●●●●●●●●●●●●●●●●●';
+      color: black;
+      display: block;
+      font-size: 15px;
+      margin: 15px 0;
+      letter-spacing: 5px;
     }
   }
   &.white-blue {
@@ -37,12 +39,12 @@
       color: $lightblue;
     }
     &:after {
-        content: '. . . . . . . . . . . . . . . .';
-        color: #fff;
-        display: block;
-        font-size: 40px;
-        line-height: 20px;
-        margin-bottom: 50px;
+      content: '●●●●●●●●●●●●●●●●●';
+      color: white;
+      display: block;
+      font-size: 15px;
+      margin: 15px 0;
+      letter-spacing: 5px;
     }
   }     
 }

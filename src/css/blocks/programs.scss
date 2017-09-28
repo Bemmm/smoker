@@ -1,36 +1,36 @@
 .programs{
-    background-image: url('https://st.depositphotos.com/1907633/2380/i/950/depositphotos_23805509-stock-photo-medicine-doctor-hands-working-with.jpg');
-    padding: 80px;
+    background-image: url('../images/programs.jpg');
+    padding: 80px 10px;
     background-size: cover;
     background-position: center center;
-    position: relative;
-    &:before{
-        content:'';
-        z-index: 0;
-        position: absolute;
-        background: $darkgrey-opacity;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
     .title{
         z-index: 1;
         position: relative;
+        margin-bottom: 70px
     }
     &__content{
         z-index: 1;
         position: relative;
         padding-bottom: 20px;
+        font-family: 'Roboto Condensed', sans-serif;        
         &-separator{
             position: absolute;
             left:0;
             right:0;
-            font-size: 40px;
+            top:-10px;
+            font-size: 15px;
             color:#fff;
-            line-height: 15px
+            line-height: 15px;
+            @media screen and (max-width:768px){
+                display: none;
+            }
         }
         &-item{
+            @media screen and (max-width:768px){
+                text-align: center !important;
+                margin: 20px 0;
+                padding: 10px !important;
+            }            
             &.left{
                 padding-right: 35px;
             }
@@ -41,12 +41,15 @@
                 color: $lightblue;
                 text-transform: uppercase;
                 margin-bottom: 30px;
+                font-size: 25px;
+                font-weight: 600;
             }            
             p{
                 color:#fff;
                 font-size: 22px;
                 line-height: 25px;
                 margin-bottom: 0;
+                font-weight: 300;
             }
         }
 
@@ -55,8 +58,10 @@
         font-size: 25px;
         position: relative;
         z-index: 1;
+        color:$lightblue;
         text-decoration: underline;
         text-align: center;
         display: block;
+        margin-top: 20px
     }
 }

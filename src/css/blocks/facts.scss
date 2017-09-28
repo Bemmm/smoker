@@ -1,6 +1,10 @@
 .facts{
     padding: 50px;
     .carousel{
+        p{
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 400;     
+        }
         &-inner{
             text-align: center;
             font-size:20px;
@@ -9,7 +13,7 @@
         }
         &-control-next{
             width:50px;
-            right:-150px;                
+            right:-50px;                
             &-icon {
                 width:40px;
                 height: 40px;
@@ -19,7 +23,7 @@
         }
         &-control-prev{
             width:50px;
-            left:-150px;        
+            left:-50px;        
             &-icon {
                 width:40px;
                 height: 40px;        

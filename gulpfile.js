@@ -57,7 +57,7 @@ gulp.src([
 });
 
 gulp.task('images', function () {
-gulp.src(startFolder + 'images/**/*')
+gulp.src(startFolder + 'img/**/*')
     .pipe(gulp.dest(finishFolder + 'images/'));
 });
 
