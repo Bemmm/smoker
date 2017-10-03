@@ -5,51 +5,58 @@
   position: relative;
   height: 900px;
   font-family: 'Roboto Condensed', sans-serif;
-  @media (min-width:1000px) and (max-width:1260px) {
+  @media (min-width: 1000px) and (max-width:1260px) {
     height: 700px;
   }
   @media screen and (max-width:1000px) {
     height: 900px;
   }
-  .carousel-indicators{
-    li{
+  .subtittle {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    color: #fff;
+    font-size: 25px;
+    left: 10%;
+  }
+  .carousel-indicators {
+    li {
       border-radius: 50%;
       width: 20px;
       height: 20px;
-      bottom: -15px;
+      bottom: 0px;
       background-color: #fff;
       margin: 0 5px;
-      &.active{
+      &.active {
         background-color: $lightblue;
       }
     }
-
   }
-  .carousel-inner{
+  .carousel-inner {
     height: 100%;
     position: relative;
-    .carousel-item{
+    .carousel-item {
       height: 100%;
-      img{
-        width:100%;
-        @media screen and (max-width:1000px) {
+      img {
+        width: 100%;
+        @media screen and (max-width: 1000px) {
           width: auto;
           height: 100%;
-        }     
+        }
       }
     }
   }
-  .flex-row{
+  .flex-row {
     position: absolute;
     top: 200px;
     left: 0;
     right: 0;
-    @media screen and (max-width:992px) {
+    @media screen and (max-width: 992px) {
       flex-direction: column !important;
       align-items: center;
       max-width: 100% !important;
-    }    
-  }  
+    }
+  }
   &__header {
     position: absolute;
     top: 0;
@@ -62,33 +69,33 @@
     }
   }
   &__slogan {
-      position: absolute;
-      left:0;
-      text-transform: uppercase;
-      color: #fff;
+    position: absolute;
+    left: 0;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px;
+    padding-left: 10%;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    bottom: 100px;
+    background: $darkgrey-opacity;
+    span {
+      color: $lightblue;
+    }
+    @media screen and (max-width:992px) {
+      position: relative;
+      width: 100%;
+      bottom: 150px;
+      top: auto;
+      font-size: 25px;
+      text-align: center;
       padding: 10px 20px;
-      padding-left: 10%;
-      font-size: 40px;
-      font-weight: 600;
-      line-height: 45px;
-      bottom: 100px;
-      background: $darkgrey-opacity;
-      span{
-          color: $lightblue;
-      }
-      @media screen and (max-width:992px) {
-        position: relative;
-        width: 100%;
-        bottom: 150px;
-        top: auto;
-        font-size:25px;
-        text-align: center;
-        padding: 10px 20px;
-      }
+    }
   }
   &__contact {
     max-width: 370px;
-    float:right;
+    float: right;
     &-header {
       background-color: $black-opacity;
       color: white;
@@ -98,7 +105,7 @@
       span {
         color: $lightblue;
       }
-      &:after{
+      &:after {
         content: '●●●●●●●●●●●●●●●●●';
         color: white;
         display: block;
@@ -130,16 +137,16 @@
           border: 1px solid transparent;
           font-weight: 600;
           cursor: pointer;
-          &:hover{
-            background-color:transparent;
-            color:white;
-            border:1px solid white;
-            span{
-                color:#fff;
+          &:hover {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            span {
+              color: #fff;
             }
-        }          
-          span{
-              color:$lightblue;
+          }
+          span {
+            color: $lightblue;
           }
         }
       }
